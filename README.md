@@ -12,21 +12,37 @@ Para o funcionamento correto do controle, a planilha é dividida em 4 áreas pri
 Centraliza as informações básicas que o programa exige anualmente.
 * **Campos:** Nome Completo, CPF, Título de Eleitor, Ocupação Principal, Endereço Atualizado e Dados Bancários para Restituição.
 
+<div align="center">
+    <img src="images/Titular.jpg" width="2000px" alt="Tela de Cadastro de Titular">
+</div>
+<br><br>
 
 ### 2. 🏦 Informes de Rendimentos (`INFORMES`)
 Registro consolidado de todos os informes recebidos.
 * **Colunas:** Fonte Pagadora (Nome/CNPJ), Tipo de Rendimento (Tributável/Isento), Valor Bruto, IRRF e Contribuição Previdenciária, Categoria (Renda Fixa, Variável) e Saldo em 31/12.
 
+<div align="center">
+    <img src="images/Informes.jpg" width="2000px" alt="Tela de Informes Bancários">
+</div>
+<br><br>
 
 ### 3. 📝 Notas e Comprovantes (`NOTAS`)
 Registro de movimentações de bens (Imóveis, Veículos, Ativos) ocorridas no ano-calendário.
 * **Colunas:** Data da Operação, Descrição do Bem, Valor de Aquisição/Venda e Situação em 31/12.
 
+<div align="center">
+    <img src="images/Notas.jpg" width="2000px" alt="Tela de Controle de Notas">
+</div>
+<br><br>
 
 ### 4. 🏥 Despesas Dedutíveis (`DESPESAS`)
 Controle de gastos que reduzem a base de cálculo (Saúde e Educação).
 * **Colunas:** Data, Beneficiário (Nome/CPF ou CNPJ), Descrição (Ex: Consulta Médica) e Valor Pago.
 
+<div align="center">
+    <img src="images/Despesas.jpg" width="2000px" alt="Tela de Controle de Despesas">
+</div>
+<br><br>
 
 
 ## 💡 Dicas de Melhorias (Upgrade da Planilha)
@@ -39,7 +55,8 @@ Para transformar a planilha em uma ferramenta de gestão eficiente, considere es
 * **Pasta Digital Padronizada:** Nomeie seus arquivos PDF de acordo com a planilha (Ex: `2023_Saude_ClinicaX.pdf`). Ter um link direto na planilha para o arquivo evita perda de tempo procurando em e-mails.
 * **Histórico de Bens:** Na aba de Bens, mantenha uma coluna com a "Discriminação" já redigida. Assim, no ano seguinte, você apenas copia e cola o texto, alterando apenas os valores de saldo.
 * **Filtros:** Use `Ctrl + Shift + L` na linha de cabeçalho.
-
+* **Alinhamento de imagens:** Para manter o alinhamento das imagens utilizadas no arquivo pode ser utilizado um [Script de alinhamento](https://github.com/Hisly-A/Organizador_de_Imposto_de_Renda_DIO/blob/main/script_de_alinhamentos.txt)
+<br><br>
 > **Nota:** Mantenha a aba de `TABELAS` oculta ou protegida. Ela deve conter as alíquotas de impostos e códigos da Receita Federal para alimentar as listas suspensas (Dropdowns) das outras abas.
 
 
@@ -78,6 +95,11 @@ Para automatizar a sua planilha usando os dados acima, siga estas etapas:
 2. **Validação de Dados**: Na aba principal (onde você lança seus bens), selecione a célula de "Código" e vá em `Dados > Validação de Dados`. Escolha "Lista" e selecione os códigos da aba `TABELAS`.
 3. **Automatize a Descrição**: Use a fórmula `=PROCV` para que, ao digitar o código (ex: 11), a planilha preencha automaticamente o grupo (ex: Bens Imóveis).
    * **Exemplo de fórmula:** `=PROCV(A2; 'TABELAS'!A:C; 2; 0)`
+  
+<div align="center">
+    <img src="images/Tabelas.jpg" width="2000px" alt="Tela de Tabelas">
+</div>
+<br><br>
 
 O que essa adição resolve para você:
 
