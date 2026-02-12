@@ -50,7 +50,7 @@ Controle de gastos que reduzem a base de cálculo (Saúde e Educação).
 Para transformar a planilha em uma ferramenta de gestão eficiente, considere estas implementações:
 
 * **Checklist de Documentação:** Crie uma coluna de status (Pendente / Recebido / Lançado) para cada informe de rendimento (bancos, corretoras e empresas).
-* **Coluna de "Código Receita":** Adicione uma coluna para inserir o código oficial da Receita (ex: 11 para Apartamento, 01 para Ações). Isso agiliza o preenchimento manual no programa. Veja mais detalhes no tópico [Tabela de Referência: Códigos da Receita Federal](https://github.com/Hisly-A/Organizador_de_Imposto_de_Renda_DIO/edit/main/README.md#-tabela-de-refer%C3%AAncia-c%C3%B3digos-da-receita-federal).
+* **Coluna de "Código Receita":** Adicione uma coluna para inserir o código oficial da Receita (ex: 11 para Apartamento, 01 para Ações). Isso agiliza o preenchimento manual no programa. Veja mais detalhes no tópico [Tabela de Referência: Códigos da Receita Federal](#-tabela-de-refer%C3%AAncia-c%C3%B3digos-da-receita-federal).
 * **Somatórios por Categoria:** Use a fórmula `=SOMAIFS(Valores; Categorias; "Saúde")` para saber o total de despesas médicas antes mesmo de abrir o programa do IR.
 * **Pasta Digital Padronizada:** Nomeie seus arquivos PDF de acordo com a planilha (Ex: `2023_Saude_ClinicaX.pdf`). Ter um link direto na planilha para o arquivo evita perda de tempo procurando em e-mails.
 * **Histórico de Bens:** Na aba de Bens, mantenha uma coluna com a "Discriminação" já redigida. Assim, no ano seguinte, você apenas copia e cola o texto, alterando apenas os valores de saldo.
@@ -58,6 +58,8 @@ Para transformar a planilha em uma ferramenta de gestão eficiente, considere es
 * **Alinhamento de imagens:** Para manter o alinhamento das imagens utilizadas no arquivo pode ser utilizado um [Script de alinhamento](https://github.com/Hisly-A/Organizador_de_Imposto_de_Renda_DIO/blob/main/script_de_alinhamentos.txt)
 <br><br>
 > **Nota:** Mantenha a aba de `TABELAS` oculta ou protegida. Ela deve conter as alíquotas de impostos e códigos da Receita Federal para alimentar as listas suspensas (Dropdowns) das outras abas.
+
+<br><br>
 
 
 ## 📑 Tabela de Referência: Códigos da Receita Federal
@@ -86,6 +88,7 @@ Para facilitar o preenchimento na aba **Bens e Direitos**, utilize esta tabela a
 | **Sujeitos à Tributação Exclusiva** | Décimo Terceiro, JCP (Juros sobre Capital Próprio), Rendimento de CDB. |
 | **Isentos e Não Tributáveis** | Dividendos, Rendimentos de Poupança/LCI/LCA, Restituição de IR anterior. |
 
+<br><br>
 
 ### 🛠️ Como implementar as Dicas de Melhoria
 
